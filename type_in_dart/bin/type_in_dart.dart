@@ -1,3 +1,7 @@
-void main(List<String> arguments) {
-  print('Hello world!');
+void main() {
+  //print('Hello world!');
+  var firstName = "Mohammad";
+  String lastName = 'Al amin';
+
+  print(firstName + ' ' + lastName);
 }
