@@ -1,3 +1,6 @@
+//import 'dart:async';
+//import 'dart:math';
+
 void main() {
   //print('Hello world!');
   ///Type inference and It's type
@@ -23,4 +26,22 @@ void main() {
   doubleValue = temp.toDouble();
   print(
       "After type conversion the value of -\nintValue = $intValue\nDoubleValue = $doubleValue");
+
+  print("\nMixed types:");
+  const classPerWeek = 6;
+  const hoursPerClass = 40 / 60;
+  const totalClassTime = classPerWeek * hoursPerClass * 4;
+  const amountPerHour = 18000 / totalClassTime;
+  print("Total class time : $totalClassTime");
+  print("Salary per hour $amountPerHour");
+  print(amountPerHour.runtimeType);
+
+  print("\nType casting\n");
+  num someNumber = 11;
+
+  if (someNumber.toInt().isEven) {
+    print("The $someNumber is an even number");
+  } else {
+    print("The $someNumber is odd");
+  }
 }
