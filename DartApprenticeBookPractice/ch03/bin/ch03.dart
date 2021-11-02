@@ -1,6 +1,8 @@
 //import 'dart:async';
 //import 'dart:math';
 
+//import 'dart:async';
+
 void main() {
   //print('Hello world!');
   ///Type inference and It's type
@@ -44,4 +46,59 @@ void main() {
   } else {
     print("The $someNumber is odd");
   }
+
+  ///Strings
+  print("\nStrings in dart\n");
+  var salutation = "Hello dart";
+
+  ///Printing utf-16 code unit in dart for every characters in a string
+  print(salutation.codeUnits);
+
+  //printing Bangladesh flag
+  var flag = '🇧🇩';
+  var dart = '🎯';
+  var family = '👨👩';
+  var wholeFamily = '👨‍👩‍👧‍👦';
+  // print(flag.codeUnits);
+
+  print(flag);
+  print(dart);
+  print(family + " " + wholeFamily);
+  print(family.length);
+  print(family.runes.length);
+  print(family.codeUnits.length);
+  print(wholeFamily.length);
+  print(wholeFamily.runes.length);
+
+  //Multiline string
+  print("\nMulti line string start and end with three single quotes '''\n");
+  const multiLineString = '''I am going to be a flutter app developer.
+Thats why I need to know dart very well .
+And I'm doing it .''';
+  const oneLine = 'This is only '
+      'a single '
+      'line '
+      'at runtime.';
+  print(oneLine + "\n");
+  print(multiLineString);
+
+  //Concatenation
+  const stringConcat = 'This is only ' + 'a single ' + 'line ' + 'at runtime.';
+  print(stringConcat);
+
+  //interpolation
+  var name2 = 'Al amin';
+  print("Hello $name2");
+
+  //Raw string
+  ///put an r To print a raw string means as you type or as it is with all the special charecters
+  const rawString = r'This is a raw string\n which name is $name';
+  print(rawString);
+
+  //Inserting charecters from their code
+  ///Here put an 'u' preceding by backslash like new line and then followed the hex code
+  ///value of 4-digit
+  print('I \u2764 Dart\u0021');
+  //print("Flag of Bangladesh \u1F1E7 1F1E9");//prblm
+  print('\u{1F405}');
 }
