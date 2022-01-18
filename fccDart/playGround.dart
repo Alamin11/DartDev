@@ -33,30 +33,42 @@ void main() {
 //   ///Replacing a variabl's value in a string using $ sign
 //   print("\n$s1\n$s2\n$s3\n$s4");
 
-  //Type Conversion
-  ///String to Integer
-  var one = int.parse('1');
-  assert(one == 1);
-  stdout.writeln(one);
+  // //Type Conversion
+  // ///String to Integer
+  // var one = int.parse('1');
+  // assert(one == 1);
+  // stdout.writeln(one);
 
-  ///If we put string as 'one' and compare it with 1
-  ///it will give a format error
-  /*var one1 = int.parse('one');
-  assert(one1 == 1);*/
+  // ///If we put string as 'one' and compare it with 1
+  // ///it will give a format error
+  // /*var one1 = int.parse('one');
+  // assert(one1 == 1);*/
 
-  ///String to Double
-  var onePointOne = double.parse('1.1');
-  assert(onePointOne == 1.1);
-  stdout.writeln(onePointOne);
+  // ///String to Double
+  // var onePointOne = double.parse('1.1');
+  // assert(onePointOne == 1.1);
+  // stdout.writeln(onePointOne);
 
-  //Int or double to string
-  ///As dart is an object oriented so everything here act as an object
-  ///so every neumerals are also act as an object
-  var oneAsString = 1.toString();
-  assert(oneAsString == '1');
-  stdout.writeln(oneAsString);
+  // //Int or double to string
+  // ///As dart is an object oriented so everything here act as an object
+  // ///so every neumerals are also act as an object
+  // var oneAsString = 1.toString();
+  // assert(oneAsString == '1');
+  // stdout.writeln(oneAsString);
 
-  var piAsString = 3.1416.toStringAsFixed(2);
-  assert(piAsString == '3.14');
-  print(piAsString);
+  // var piAsString = 3.1416.toStringAsFixed(2);
+  // assert(piAsString == '3.14');
+  // print(piAsString);
+
+  //Constant and runtime type
+  const name = "Md. Al amin";
+  const pi = 3.1416;
+  const age = 30;
+  var none;
+
+  print(name.runtimeType);
+  print(pi.runtimeType);
+  print(age.runtimeType);
+  print(none.runtimeType);
+  print(none);
 }
