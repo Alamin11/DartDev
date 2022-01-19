@@ -101,4 +101,34 @@ And I'm doing it .''';
   print('I \u2764 Dart\u0021');
   //print("Flag of Bangladesh \u1F1E7 1F1E9");//prblm
   print('\u{1F405}');
+
+  //Mini exercise 01 and 02
+  print("\nMini Exercise\n");
+  String firstName = 'Al amin';
+  String lastName = 'Mondol';
+  String fullName = firstName + ' ' + lastName;
+  print(fullName);
+
+  //Mini exercise 03
+  print("Hello my name is $fullName");
+
+  //Object and dynamic type
+  print("\nObject and Dynamic type\n");
+  var dynamicVariable;
+  dynamicVariable = 'Dynamic';
+  dynamicVariable = 23;
+  print(dynamicVariable);
+
+  ///Here compiler will show no error as var declaration
+  ///without assignment make the variable as a dynamic type
+  dynamic anyType = 20;
+  anyType = 'name';
+  print(anyType);
+
+  ///In the example above we created a dynamic type variable that can take any value
+
+  //Now object type
+  Object? anyValue = 'ami';
+  anyValue = 34;
+  print(anyValue);
 }
