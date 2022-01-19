@@ -61,14 +61,36 @@ void main() {
   // print(piAsString);
 
   //Constant and runtime type
-  const name = "Md. Al amin";
-  const pi = 3.1416;
-  const age = 30;
-  var none;
+  // const name = "Md. Al amin";
+  // const pi = 3.1416;
+  // const age = 30;
+  // var none;
 
-  print(name.runtimeType);
-  print(pi.runtimeType);
-  print(age.runtimeType);
-  print(none.runtimeType);
-  print(none);
+  // print(name.runtimeType);
+  // print(pi.runtimeType);
+  // print(age.runtimeType);
+  // print(none.runtimeType);
+  // print(none);
+
+  // Operator in dart //
+  ///Like other programming language dart also supports
+  ///standard operators like - +, -, *, /, %, = etc
+  ///
+  var num = 10;
+  // num = num + 1; // plus operator
+  // num = num - 2; //Minus operator
+  // num = num ~/ 3; // Division operator with truncating to int from double
+  // num = num * 5; //Multiplication operator
+  // num = num % 2; //Modulus operator to find the reminder
+  //Now shortcut assignment for the above assignments
+  num += 1;
+  num -= 2;
+  num ~/= 3;
+  num *= 5;
+  num %= 2;
+  //Relational operator ==, !=, >=, <= //
+  if (num == 0) {
+    print("Num $num is even");
+  } else
+    print("Num $num is odd.");
 }
