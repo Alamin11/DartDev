@@ -93,4 +93,11 @@ void main() {
     print("Num $num is even");
   } else
     print("Num $num is odd.");
+
+  // /    Ternary Operator   ///
+  ///We can do same if else check using a simple ternary operation in single line statement
+  /// Conditional statement ? true statement : false statement;
+  var evenOddCheck = num % 2 == 0 ? 'Even' : 'Odd';
+
+  print("Using ternary operation , the number $num is $evenOddCheck .");
 }
