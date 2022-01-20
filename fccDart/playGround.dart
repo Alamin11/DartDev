@@ -100,4 +100,12 @@ void main() {
   var evenOddCheck = num % 2 == 0 ? 'Even' : 'Odd';
 
   print("Using ternary operation , the number $num is $evenOddCheck .");
+
+  ///    Type test ///
+  /// Using is operator like "varName is typeYouCheck"
+  /// This gives a bool value
+  if (num is double)
+    print("The $num is an integer");
+  else
+    print("The $num is not a double type.");
 }
