@@ -45,9 +45,9 @@ void main() {
   // assert(one1 == 1);*/
 
   // ///String to Double
-  // var onePointOne = double.parse('1.1');
-  // assert(onePointOne == 1.1);
-  // stdout.writeln(onePointOne);
+  var onePointOne = double.parse('1.1');
+  assert(onePointOne == 1.1);
+  stdout.writeln(onePointOne);
 
   // //Int or double to string
   // ///As dart is an object oriented so everything here act as an object

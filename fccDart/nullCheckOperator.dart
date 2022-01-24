@@ -7,9 +7,10 @@ main() {
   var n;
   var num;
 
-  //if (n != null)
-  //  Null aware operator -> (?.) //
-  //num = n?.number;
+  if (n != null)
+    //  Null aware operator -> (?.) //
+    num = n?.number;
+
   /// What it does here that first check if the n object is null or not
   /// if not null then access the number property
   /// and asign the value of number to num
