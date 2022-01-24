@@ -22,7 +22,7 @@ main() {
   List<String> sList = ['Shorif', 'Habib', 'Rubel'];
   List<int> intTypeList = [10, 22, 34];
   var refList = names; //This is referencing the same list
-  var copyList = [...names];
+  var copyList = [...names]; // Copy using spread way
   names[3] = 'Rupa';
   //printing the list using for-in loop
   print("List before copy");
@@ -40,4 +40,25 @@ main() {
   // print(intTypeList.runtimeType);
   //Number of items in the list
   //print(names.length);
+
+  // Set //
+  ///Set is another collection of unordered data in dart
+  ///It follows basic set literals
+
+  //Declaration
+  var setCollection = {'Al amin', 'Toma'}; //string hash set
+  Set set2 = {}; //dynamic hash set
+  Set<String> set4 = {}; //Statically typed hash set
+  var set3 = {}; // linked hash map
+
+  //printing the set
+  for (var x in setCollection) {
+    print(x);
+  }
+  //RunTime type
+  print(setCollection.runtimeType);
+  print(set2.runtimeType);
+  print(set4.runtimeType);
+
+  print(set3.runtimeType);
 }
