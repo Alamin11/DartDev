@@ -59,6 +59,19 @@ main() {
   print(setCollection.runtimeType);
   print(set2.runtimeType);
   print(set4.runtimeType);
-
   print(set3.runtimeType);
+
+  // Map //
+  /// Key value pair
+  /// Unordered pair
+  Map mapCollection = {
+    //Key  //value
+    1: 'Liton',
+    2: 'Razu',
+    3: 'Al amin'
+  };
+  print(mapCollection[1]);
+  // for (var c in mapCollection) {
+  //   print(c);
+  // }
 }
