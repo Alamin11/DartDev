@@ -40,8 +40,12 @@ class User {
 //Creating another class with constant properties
 class ConstantProperties {
   final x; //As final is runtime properties of object So, it can be assigned many times before running
-  static const age =
-      29; //But here age is constant and its a properties of class so it can't be changed
+  static const age = 29;
+  //But here age is constant and its a properties of class so it can't be changed
+  //In this case though it acting like diffrent but
+  //When we use final and const out side the class both keyword are act same and
+  //can be assigned once at a time and remain unchanged
+  
   //Creating default constructor
   ConstantProperties(this.x);
 }
