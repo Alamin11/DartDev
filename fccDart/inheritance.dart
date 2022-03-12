@@ -5,6 +5,7 @@ class Veichle {
     // print(gener);
     // print(origin);
   }
+
   void showOutput() {
     print(gener);
     print(origin);
@@ -17,6 +18,7 @@ class Car extends Veichle {
   Car(int gener, String origin, this.model)
       : super(gener, origin); //accessing the properties of super class
   //we need to have a colon after constructor and after colon super keyword and then field name
+  @override
   void showOutput() {
     super
         .showOutput(); //But to access the method of superclass we just need super keyword followed by
