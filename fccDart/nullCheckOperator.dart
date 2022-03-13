@@ -9,7 +9,7 @@ main() {
 
   if (n != null)
     //  Null aware operator -> (?.) //
-    num = n?.number;
+    num = n?.number; //check and assign
 
   /// What it does here that first check if the n object is null or not
   /// if not null then access the number property
